@@ -1,0 +1,27 @@
+import time
+
+time.sleep(1)
+print("¡Bienvenido a la primera versión de este programa!")
+time.sleep(2)
+print("Diccionario traductor")
+time.sleep(2)
+print("Se te hará una pregunta, que palabra quieres traducir y saber su significado")
+time.sleep(2)
+print("Coloca la palabra y el programa te dará los resultados")
+time.sleep(2)
+print("Recuerda que es del idioma ingles a español")
+time.sleep(2)
+
+dic = {"hello" : "Hola en ingles, un saludo casual",
+    "bye" : "Adios en ingles, palabra usada para la despedida",
+    "cat" : "Gato en ingles, es un animal domestico",
+    "dog" : "Perro en ingles, el mejor amigo del hombre",
+    "mouse" : "Raton en ingles, el roedor de las calles"}
+
+palabra = input("Escribe una palabra que no entiendas del todo")
+
+if palabra in dic.keys():
+    print(dic[palabra])
+    
+else:
+    print("La palabra que busca no se encuentra en el diccionario")
