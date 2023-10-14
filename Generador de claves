@@ -1,0 +1,12 @@
+import random
+
+caracteres = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+longitud = int(input("¿Cuantos caracteres quiere que tenga su clave segura?"))
+
+clave = ""
+
+for i in range(longitud):
+    x = random.choice(caracteres)
+    clave += x
+
+print(clave)
